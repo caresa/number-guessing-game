@@ -1,0 +1,80 @@
+body{
+  font-family: 'Fredoka One', cursive;
+  margin-top: 10px;
+}
+
+.header label{
+  display: none;
+  text-align: center;
+  font-size: 30px;
+}
+
+.main.image img{
+  display: none;
+}
+
+.main.image{
+  display: none;
+  margin: 0 auto;
+  height: auto;
+  width: 45%;
+  text-align: center;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow:
+  -moz-box-shadow:    .5px .5px 1.5px 2.5px #ccc;
+  -webkit-box-shadow: .5px .5px 1.5px 2.5px #ccc;
+  box-shadow:         .5px .5px 1.5px 2.5px #ccc;
+}
+
+
+.up.down{
+  text-align: center;
+  margin-top: 5px;
+}
+
+.landmine{
+  text-align: center;
+}
+
+.form #user-input{
+  width: 45%;
+  margin: 0 auto;
+  border: none;
+  border-bottom: 1px solid black;
+}
+
+.buttons{
+  text-align: center;
+}
+
+.buttons #submit-button, #new-game{
+    -moz-box-shadow:inset 0px 1px 0px 0px #bbdaf7;
+    -webkit-box-shadow:inset 0px 1px 0px 0px #bbdaf7;
+    box-shadow:inset 0px 1px 0px 0px #bbdaf7;
+    background-color:transparent;
+    -webkit-border-top-left-radius:6px;
+    -moz-border-radius-topleft:6px;
+    border-top-left-radius:6px;
+    -webkit-border-top-right-radius:6px;
+    -moz-border-radius-topright:6px;
+    border-top-right-radius:6px;
+    text-indent:0;
+    border:1px solid #84bbf3;
+    display:inline-block;
+    color:#666;
+    font-family:'Fredoka One', cursive;
+    font-size:15px;
+    font-weight:bold;
+    font-style:normal;
+    height:50px;
+    line-height:50px;
+    width:100px;
+    text-decoration:none;
+    text-align:center;
+  }.classname:active {
+    position:relative;
+    top:1px;
+}
+

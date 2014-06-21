@@ -1,0 +1,109 @@
+<!doctype>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Guess the Number!</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--foundation-->
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/foundation/5.2.3/css/foundation.min.css">
+    <!--stylesheet-->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <!--google font-->
+    <link href='http://fonts.googleapis.com/css?family=Fredoka+One' rel='stylesheet' type='text/css'>
+  </head>
+
+<body>
+<!--header-->
+<div class="header">
+  <label>PICK A NUMBER BETWEEN 1 & 100!</label>
+</div>
+<!--background img-->
+<div class ="main image">
+  <img src="img/calm.png">
+</div>
+<!--displays whether the user should enter a lower/higher num-->
+<div class="up down">
+  <label id="response"></label><br>
+</div>
+<!--how far the user is from a landmine-->
+<div class="landmine">
+  <label id="l-mines">Watch-out for the landmines</label>
+</div>
+  <br>
+<!--user input-->
+<div class="form">
+  <input id="user-input" type="text" />
+</div>
+<!--buttons-->
+<div class="buttons">
+
+  <input id="submit-button" type="button" value="Guess" />
+  <input id="new-game" type="button" value="New Game" />
+</div>
+
+
+<!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script> -->
+
+<!-- var secretNumber = parseInt(Math.random() * 100, 10) + 1;
+
+
+$('#submit-button').on('click', function () {
+  var userNumber = $('#user-input').val();
+  $("#response").text("You guessed " + userNumber + " !");
+  checkNumber(userNumber);
+  $('#user-input').val("");
+});
+
+$('#new-game').on('click', function () {
+  secretNumber = parseInt(Math.random() * 100, 10) + 1;
+  $("#response").text("A new game has started!");
+  $('#user-input').val('');
+});
+
+var landmines = function () {
+  var new_mine = parseInt(Math.random() * 100, 10) + 1;
+  return new_mine;
+};
+
+var mines = [landmines(), landmines(), landmines()];
+
+var checkNumber = function (userNumber) {
+  if ((isNaN(userNumber)) || (userNumber < 0) || (userNumber > 100)){
+    $("#response").text("Please enter a valid number");
+  }else if (userNumber > secretNumber){
+    $("#response").text("Please enter a lower number");
+  }else if(userNumber < secretNumber) {
+    $("#response").text("Please enter a higher number");
+  }else if (userNumber == secretNumber) {
+    $("#response").text("Congratulations! You entered the correct number");
+  }
+   checkMines(userNumber);
+};
+
+var checkMines = function (userNumber){
+  console.log(mines);
+  var hot, distance;
+
+  for (var i = 0; i < mines.length; i += 1){
+    distance = Math.abs(userNumber - mines[i]);
+    if (distance === 0){
+      $("#l-mines").text("Landmine!!");
+        return;
+    }
+    if(!hot || distance < hot){
+       hot = distance;
+    }
+  }
+  $("#l-mines").text("You are "+hot+" away from a landmine!!");
+
+};
+
+
+</script> -->
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <script type="text/javascript" src="js/business-logic.js"></script>
+  <script type="text/javascript" src="js/presentation-UI.js"></script>
+  </body>
+</html>
